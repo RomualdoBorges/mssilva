@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font: 500 1.125rem/1.78 "Montserrat", sans-serif;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px;
+}
+
+.header-menu a:hover {
+  color: var(--cor-p1);
+}
+
+@media (max-width: 800px) {
+  .header {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: var(--cor-1);
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background: var(--cor-1);
+    color: inherit;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu a {
+    background: var(--cor-1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,24 @@
+.dados-bg {
+  background: var(--cor-p5);
+  position: fixed;
+  width: 100%;
+}
+
+.dados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+
+.dados-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .dados {
+    gap: 20px;
+  }
+}
